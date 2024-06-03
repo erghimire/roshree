@@ -11,17 +11,26 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            background-image: url('https://images.unsplash.com/photo-1531428592377-8ec208251a38');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         header {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
         }
 
         nav {
-            background-color: #444;
+            background-color: rgba(0, 0, 0, 0.7);
             text-align: center;
             padding: 10px 0;
         }
@@ -34,19 +43,24 @@
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .active {
-            background-color: #555 !important;
+            background-color: rgba(255, 255, 255, 0.1) !important;
         }
 
         section {
-            padding: 20px;
+            padding: 80px 20px;
+            margin-top: 60px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         footer {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.7);
             color: #fff;
             text-align: center;
             padding: 10px 0;
