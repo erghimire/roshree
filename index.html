@@ -1,141 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roshree Ghimire</title>
+    <title>Roshree Ghimire - Personal Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
-            background-image: url('https://images.unsplash.com/photo-1531428592377-8ec208251a38');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-color: #f4f4f4;
         }
-
         header {
-            background-color: #2c3e50;
+            background-color: #333;
             color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 999;
-            transition: top 0.3s;
-        }
-
-        nav {
-            background-color: #34495e;
-            text-align: center;
             padding: 10px 0;
+            text-align: center;
         }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            transition: background-color 0.3s ease;
+        h1 {
+            margin: 20px 0;
         }
-
-        nav a:hover {
-            background-color: #2980b9;
-        }
-
-        .active {
-            background-color: #2980b9 !important;
-        }
-
         section {
-            padding: 40px 20px;
-            margin-top: 60px;
-            color: #333;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        section h2 {
-            color: #2c3e50;
-        }
-
         footer {
-            background-color: #2c3e50;
+            background-color: #333;
             color: #fff;
-            text-align: center;
             padding: 10px 0;
+            text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
     </style>
 </head>
-
 <body>
-
-
-    <nav>
-        <a href="#home" class="active">Home</a>
-        <a href="#name">Name</a>
-        <a href="#about">About Me</a>
-        <a href="#family">My Family Members</a>
-        <a href="#contact">Contact Me</a>
-    </nav>
-
-    <section id="home">
-        <h2>Welcome to My Website!</h2>
-        <p>This is the home page of Roshree Ghimire.</p>
-    </section>
-
-    <section id="name">
-        <h2>Name</h2>
-        <p>Roshree Ghimire</p>
-    </section>
-
-    <section id="about">
+    <header>
+        <h1>Roshree Ghimire</h1>
+        <p>Welcome to my personal website!</p>
+    </header>
+    <section>
         <h2>About Me</h2>
-        <p>This is where you can write a brief description of yourself.</p>
+        <p>I am Roshree Ghimire. This is my personal website where you can learn more about me and my interests.</p>
     </section>
-
-    <section id="family">
-        <h2>My Family Members</h2>
-        <p>List your family members here.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can contact me via email at roshreeghimire@gmail.com</p>
-    </section>
-
     <footer>
         <p>&copy; 2024 Roshree Ghimire</p>
     </footer>
-
-    <script>
-        // Auto-hide header on scroll
-        let lastScrollTop = 0;
-        const header = document.getElementById("header");
-
-        window.addEventListener("scroll", () => {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollTop > lastScrollTop) {
-                // Scroll down
-                header.style.top = "-60px"; // Hide header
-            } else {
-                // Scroll up
-                header.style.top = "0"; // Show header
-            }
-
-            lastScrollTop = scrollTop;
-        });
-    </script>
-
 </body>
-
 </html>
